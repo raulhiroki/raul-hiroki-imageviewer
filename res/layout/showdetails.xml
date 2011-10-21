@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			  android:orientation="vertical"
+    			  android:layout_width="fill_parent"
+    			  android:layout_height="fill_parent" android:weightSum="1" android:gravity="center">
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			  	  android:orientation="vertical"
+					  android:layout_width="fill_parent"
+		      		  android:layout_height="fill_parent"
+		      		  android:gravity="center"
+		      		  android:layout_weight="0.77">
+			<ImageView android:id="@+id/preview"
+			   	   	   android:layout_width="fill_parent"
+			   	   	   android:layout_height="fill_parent"
+	      	   	   	   android:adjustViewBounds="true"
+	      	   	   	   android:gravity="center"
+	      	   	   	   android:scaleType="matrix"/>
+
+		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			  	  android:orientation="vertical"
+					  android:layout_width="fill_parent"
+		      		  android:layout_height="wrap_content"
+		      		  android:gravity = "bottom" >
+			<Button android:id="@+id/backtolistbtn"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/backtolistbtn"
+	                android:textSize="16.0sp"
+	                android:gravity="center"/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

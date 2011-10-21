@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.hero.imageviewer"
+      android:versionCode="1"
+      android:versionName="1.0.1" android:installLocation="auto">
+
+    <application android:icon="@drawable/photos" android:label="@string/app_name">
+        <activity android:name=".MainActivity"
+        	android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@style/MyTheme"
+            android:clearTaskOnLaunch = "true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ShowListActivity"
+        	android:screenOrientation="portrait"
+        	android:theme="@style/MyTheme">
+        </activity>
+
+        <activity android:name=".ShowDetailsActivity"
+        	android:screenOrientation="portrait"
+        	android:theme="@style/MyTheme">
+        </activity>
+
+        <activity android:name="ShowGalleryViewActivity"
+        	android:screenOrientation="portrait"
+        	android:theme="@style/MyTheme">
+        </activity>
+    </application>
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

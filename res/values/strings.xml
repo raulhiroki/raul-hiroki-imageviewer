@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World!</string>
+    <string name="app_name">ImageViewer</string>
+	<string name="activity_animation_duration">300</string>
+    <string name="loading">Loading Images...</string>
+    <string name="backtogridviewbtn">Back To Grid View</string>
+    <string name="backtolistbtn">Back To List</string>
+    <string name="set_dir">Set Image Folder</string>
+    <string name="file_list_select_here">Select here</string>
+    <string name="file_list_dont_get_list">Cannot get list.</string>
+    <string name="file_list_empty">&lt;Empty&gt;</string>
+</resources>
