@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/container"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			  android:orientation="vertical"
+    			  android:layout_width="fill_parent"
+    			  android:layout_height="fill_parent"
+    			  >
+
+	    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/mainview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:orientation="vertical">
+
+	        <GridView
+			    xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:id="@+id/image_grid"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:numColumns="4"
+			    android:stretchMode="columnWidth"
+			    android:gravity="center_horizontal"
+			    android:layoutAnimation="@anim/layout_wave_scale"
+			></GridView>
+
+		</FrameLayout>
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/btnview"
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="bottom">
+
+	        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	        	android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:stretchColumns="1"
+	        	android:gravity="bottom">
+			    <TableRow>
+				    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				    			  android:orientation="vertical"
+				    			  android:layout_width="fill_parent"
+				    			  android:layout_height="fill_parent"
+			    				  android:gravity="left">
+					    	 <ImageButton
+							      android:id="@+id/btnPrev"
+							      android:layout_width="wrap_content"
+							      android:layout_height="wrap_content"
+							      android:src="@drawable/arrow_left"
+			       				  android:gravity="center"
+				     		 />
+					</LinearLayout>
+		     		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			    			  android:orientation="vertical"
+			    			  android:layout_width="fill_parent"
+			    			  android:layout_height="fill_parent">
+			    			  <ImageButton
+							      android:id="@+id/btnGoList"
+							      android:layout_width="150px"
+							      android:layout_height="wrap_content"
+							      android:src="@drawable/advanced_data_grid"
+				     		 />
+				     </LinearLayout>
+				     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			    			  android:orientation="vertical"
+			    			  android:layout_width="fill_parent"
+			    			  android:layout_height="fill_parent">
+				     		 <ImageButton
+							      android:id="@+id/btnGoGallery"
+							      android:layout_width="150px"
+							      android:layout_height="wrap_content"
+							      android:src="@drawable/photo"
+				     		 />
+				     </LinearLayout>
+				     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			    			  android:orientation="vertical"
+			    			  android:layout_width="fill_parent"
+			    			  android:layout_height="fill_parent"
+			    			  android:gravity="right">
+				     		 <ImageButton
+							      android:id="@+id/btnNxt"
+							      android:layout_width="wrap_content"
+							      android:layout_height="wrap_content"
+							      android:src="@drawable/arrow_right"
+			       				  android:gravity="center"
+				     		 />
+				     </LinearLayout>
+			    </TableRow>
+	        </TableLayout>
+		</LinearLayout>
+	</LinearLayout>
+</FrameLayout>

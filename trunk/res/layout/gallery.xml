@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			  android:orientation="vertical"
+    			  android:layout_width="fill_parent"
+    			  android:layout_height="fill_parent" android:weightSum="1" android:gravity="center">
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					  android:layout_width="fill_parent"
+		      		  android:layout_height="fill_parent"
+		      		  android:gravity="center"
+		      		  android:layout_weight="0.77">
+			<ImageView android:id="@+id/imageView1"
+    				   android:layout_height="fill_parent"
+			   	   	   android:layout_width="fill_parent"
+			   	   	   android:gravity="center"
+	      	   	   	   android:scaleType="fitCenter"></ImageView>
+		</LinearLayout>
+		<LinearLayout
+					  android:layout_width="fill_parent"
+		      		  android:layout_height="wrap_content"
+		      		  android:gravity = "bottom"
+		      		  android:padding="5dp" >
+			<Gallery android:id="@+id/gallery1"
+					 android:layout_height="fill_parent"
+					 android:layout_width="fill_parent"></Gallery>
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>
